@@ -1,0 +1,18 @@
+(function($){
+
+	$(document).ready(function() {
+
+		/*
+        * Countdown
+        */
+		$('#countdown').countdown('2028/01/02', function(event) {
+        	$(this).html(event.strftime(''
+                + '<div><div>00</div><i>Horas</i></div>'
+                + '<div><div>%M</div><i>Minutos</i></div>'
+                + '<div><div>%S</div><i>Segundos</i></div>'
+        	));
+    	});
+
+	});
+
+})(jQuery);
